@@ -13,12 +13,6 @@ In this repo is a simple implementation of a minimal todo app, used for demo pur
 - Supabase Auth
 - Auth and oAuth example (GitHub)
 
-### Getting Started
-
-#### Starter Code
-
-The branch `starter` is all the code you need to follow along with the tutorial.
-
 #### Supabase Table
 
 ```sql
@@ -39,13 +33,4 @@ create policy "Individuals can update their own todos." on todos for
 create policy "Individuals can delete their own todos." on todos for
     delete using ((select auth.uid()) = user_id);
 ```
-
-### Learning Points
-
-Hopefully, from this project and the video, you can learn:
-
-- NextJS 14 Server Actions (and drawbacks)
-- Supabase Auth and Database
-- useFormState
-- useOptimistic
 
